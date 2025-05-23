@@ -64,7 +64,7 @@ architecture sim of tb is
   signal data_L : std_logic_vector(7 downto 0);
   signal Reg_Z1 : std_logic;
   constant inBmp	: string := "boeing_grayscale.bmp";
-  constant outbmp 	: string := "outT128_" & inBmp;
+  constant outbmp 	: string := "outT24_" & inBmp;
 
 begin
 
@@ -228,25 +228,6 @@ begin
       end loop;
       deallocate(row);
     end loop;
-
---    for row_i in 0 to image_height - 1 loop
---      row := image(row_i);
-
---      for col_i in 0 to image_width - 1 loop
-
---        -- Write blue pixel
---        write(out_file,
---          character'val(to_integer(unsigned(row(col_i).blue))));
-
---        -- Write green pixel
---        write(out_file,
---          character'val(to_integer(unsigned(row(col_i).green))));
-
---        -- Write red pixel
---        write(out_file,
---          character'val(to_integer(unsigned(row(col_i).red))));
-
---      end loop;
 
     deallocate(image);
     enable <= '0';

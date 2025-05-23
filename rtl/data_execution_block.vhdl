@@ -53,7 +53,7 @@ signal SP14 : std_logic_vector (7 downto 0);
 signal SP23 : std_logic_vector (7 downto 0);
 signal Reg_G : std_logic_vector (7 downto 0);
 --signal Reg_Z : std_logic;
-signal T : std_logic_vector (7 downto 0):="10000000"; --Threshold made to 128
+signal T : std_logic_vector (7 downto 0):="00011000"; --Threshold made to 24
 Begin
     process (CLK, Reset_n)
     begin
