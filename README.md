@@ -43,9 +43,10 @@ if the Vivado project is named RobertsCross. The generated output will also be i
 
 # Simulation Results
 
+Both the images are of different sizes but the testbench module can handle different sizes dynamically. The original images have been grayscaled for a better RC result. Otherwise the clouds in the boeing result would signficantly interfere in the final image. 
+
 ## Blackbuck
 
-Both the images are of different sizes but the testbench module can handle different sizes dynamically. 
 <div align="center">
   <figure>
     <img src="images/blackbuck_comparison_T14.jpg" alt="Cant find image" />
@@ -53,10 +54,12 @@ Both the images are of different sizes but the testbench module can handle diffe
   </figure>
 </div>
 
+## Boeing
+
 <div align="center">
   <figure>
     <img src="images/boeing_comparison_T24.jpg" alt="Cant find image" />
-    <figcaption>Figure 1: Comparison of original grayscale junked boeing plane image to the RC processed with threshold of 24 </figcaption>
+    <figcaption>Figure 2: Comparison of original grayscale junked boeing plane image to the RC processed with threshold of 24 </figcaption>
   </figure>
 </div>
 
